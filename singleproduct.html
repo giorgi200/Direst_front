@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav justify-content-between row container">
+            <!-- navigation  -->
+            <div class="rm-icon">
+                <div class="cr-1"></div>
+                <div class="cr-2"></div>
+            </div>
+            <ul class="y-width main-nav-list justify-content-between row" id="res-menu">
+                <img src="assets/img/logo-web.png" class="nav-logo" alt="logo">
+                <li class="nav-item search-icon dbl for-dn">
+                    <img src="assets/img/search.svg" alt="login">
+                    <!-- if don't use ajax  <form action="#"> -->
+                    <input type="text" id="mains-search">
+                    <!-- </form> -->
+                </li>
+                <li class="nav-item active for-dn dbl">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item for-dn dbl">
+                    <a class="nav-link" href="Dishes.html">Dishes</a>
+                </li>
+                <li class="nav-item for-dn dbl">
+                    <a class="nav-link" href="Restaurants.html">Restuarents</a>
+                </li>
+                <li class="nav-item for-dn dbl home-res">
+                    <a class="nav-link" href="Restaurants.html">Home</a>
+                </li>
+            </ul>
+            <!-- my-sections -->
+            <ul class="x-width main-nav-list justify-content-between row">
+                <li class="nav-item login-btn d-flex">
+                    <img src="assets/img/home.svg" alt="login">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+    
+                <li class="nav-item my-table-btn">
+                    <a class="nav-link" href="#">
+                        <img src="assets/img/person.svg" alt="my-table">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container single-dish">
+        <section class="dish-com d-flex justify-content-between">
+            <div class="img-sec" style="background: url(assets/img/download.jpeg);"></div>
+            <div class="details-sec">
+                <div class="d-flex  justify-content-between pre-head">
+                    <h1>Mushroom cream soup</h1>
+                    <p class="lari">₾ 15</p>
+                </div>
+                <p class="single-result">150 results</p>
+                <p class="single-res">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+                <div class="single-size">
+                    <h2 class="the-size">Size</h2>
+                    <div class="single-choose d-flex justify-content-between align-items-center">
+                        <div class="left-side d-flex align-items-center">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="single-radio" id="Small"
+                                    class="customRadio custom-control-input">
+                                <label class="custom-control-label" for="Small"></label>
+                            </div>
+                            <div class="d-flex dificult">
+                                <strong>Small</strong>
+                                <p>14 cm</p>
+                            </div>
+                        </div>
+                        <p class="lari">₾ 15</p>
+                    </div>
+                    <div class="single-choose d-flex justify-content-between align-items-center">
+                        <div class="left-side d-flex align-items-center">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="single-radio" id="Medium"
+                                    class="customRadio custom-control-input">
+                                <label class="custom-control-label" for="Medium"></label>
+                            </div>
+                            <div class="d-flex dificult">
+                                <strong>Medium</strong>
+                                <p>14 cm</p>
+                            </div>
+                        </div>
+                        <p class="lari">₾ 15</p>
+                    </div>
+                    <div class="single-choose d-flex justify-content-between align-items-center">
+                        <div class="left-side d-flex align-items-center">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="single-radio" id="Large"
+                                    class="customRadio custom-control-input">
+                                <label class="custom-control-label" for="Large"></label>
+                            </div>
+                            <div class="d-flex dificult">
+                                <strong>Large</strong>
+                                <p>14 cm</p>
+                            </div>
+                        </div>
+                        <p class="lari">₾ 15</p>
+                    </div>
+                </div>
+                <div class="Quantity">
+                    <p class="the-size">Quantity</p>
+                    <input type="number" id="Quantity" value="2">
+                </div>
+                <div class="send-single">
+                    <a href="#" class="btn order">Order</a>
+                    <a href="#" class="go-back">Go back</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+            <p class="foodes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and</p>
+            <div class="fooline"></div>
+            <nav>
+                <ul class="foonav">
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="#PP">Privacy Policy</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="foocr">Copyright © 2018. Direst LTD. All rights reserved!</p>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

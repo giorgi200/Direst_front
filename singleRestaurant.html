@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav justify-content-between row container">
+            <!-- navigation  -->
+            <div class="rm-icon">
+                <div class="cr-1"></div>
+                <div class="cr-2"></div>
+            </div>
+            <ul class="y-width main-nav-list justify-content-between row" id="res-menu">
+                <img src="assets/img/logo-web.png" class="nav-logo" alt="logo">
+                <li class="nav-item search-icon dbl for-dn">
+                    <img src="assets/img/search.svg" alt="login">
+                    <!-- if don't use ajax  <form action="#"> -->
+                    <input type="text" id="mains-search">
+                    <!-- </form> -->
+                </li>
+                <li class="nav-item active for-dn dbl">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item for-dn dbl">
+                    <a class="nav-link" href="Dishes.html">Dishes</a>
+                </li>
+                <li class="nav-item for-dn dbl">
+                    <a class="nav-link" href="Restaurants.html">Restuarents</a>
+                </li>
+                <li class="nav-item for-dn dbl home-res">
+                    <a class="nav-link" href="Restaurants.html">Home</a>
+                </li>
+            </ul>
+            <!-- my-sections -->
+            <ul class="x-width main-nav-list justify-content-between row">
+                <li class="nav-item login-btn d-flex">
+                    <img src="assets/img/home.svg" alt="login">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+    
+                <li class="nav-item my-table-btn">
+                    <a class="nav-link" href="#">
+                        <img src="assets/img/person.svg" alt="my-table">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container single-dish">
+        <section class="dish-com d-flex justify-content-between">
+            <div class="img-sec" style="background: url(assets/img/Optimizar-ventas-en-restaurante.jpg)">
+            </div>
+            <div class="details-sec">
+                <div class="d-flex  justify-content-between pre-head">
+                    <h1>Restaurant name</h1>
+                    <p class="lari dolari">$$$</p>
+                </div>
+                <p class="single-result">Georgian Traditional</p>
+                <p class="single-res single-restorant">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+                <div class="call-dir d-flex justify-content-between">
+                    <!-- call -->
+                    <div class="call-loc d-flex">
+                        <img src="assets/img/phone.svg" alt="">
+                        <p class="con-des">Call</p>
+                    </div>
+                    <!-- Directions -->
+                    <div class="call-loc d-flex">
+                        <img src="assets/img/directions.svg" alt="">
+                        <p class="con-des">Directions</p>
+                    </div>
+                </div>
+                <!-- adress -->
+                <div class="d-flex loc-adress">
+                    <img src="assets/img/pin.svg" alt="">
+                    <p class="adress">Vakhtang gorgasali str. 17</p>
+                </div>
+                <!-- DISHES -->
+                <div class="dish-list">
+                    <h1 class="dish-list-header">Dishes</h1>
+                    <!-- Collapse Menu -->
+                    <div class="accordion my-collapse" id="collapse">
+                        <!-- Collapse 1 -->
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <div class="mb-0 header-of-coll justify-content-between d-flex collapsed"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <button class="drop-down-dishes">Starters</button>
+                                    <img src="assets/img/to.svg" class="dr-arrow" alt="">
+                                </div>
+                            </div>
+
+                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                data-parent="#collapse">
+                                <div class="card-body collapse-card-dishes">
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Collapse 2 -->
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="mb-0 header-of-coll justify-content-between d-flex collapsed"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                    <button class="drop-down-dishes">Main dishes</button>
+                                    <img src="assets/img/to.svg" class="dr-arrow" alt="">
+                                </div>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo"
+                                data-parent="#collapse">
+                                <div class="card-body collapse-card-dishes">
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Collapse 3 -->
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <div class="mb-0 header-of-coll justify-content-between d-flex collapsed"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                    aria-controls="collapseThree">
+                                    <button class="drop-down-dishes">Desserts</button>
+                                    <img src="assets/img/to.svg" class="dr-arrow" alt="">
+                                </div>
+                            </div>
+
+                            <div id="collapseThree" class="collapse " aria-labelledby="headingThree"
+                                data-parent="#collapse">
+                                <div class="card-body collapse-card-dishes">
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                    <div class="sel-vis justify-content-between align-items-center d-flex">
+                                        <div class="d-flex">
+                                            <img src="assets/img/download.jpeg" class="m-img" alt="">
+                                            <div class="sel-head align-items-center">
+                                                <div class="selected-child d-flex">
+                                                    <a href="/singleproduct.html" class="select-h1">Mushroom cream
+                                                        Soup</a>
+                                                    <p class="selected-des"> Short description goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="from-lari d-flex">
+                                            <p class="sel-from">From</p>
+                                            <p class="sel-lari">₾ 15</p>
+                                        </div>
+                                        <button class="sel-order btn">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+            <p class="foodes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and</p>
+            <div class="fooline"></div>
+            <nav>
+                <ul class="foonav">
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="#PP">Privacy Policy</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="foocr">Copyright © 2018. Direst LTD. All rights reserved!</p>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

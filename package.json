@@ -1,0 +1,23 @@
+{
+  "name": "davaleba",
+  "version": "1.0.0",
+  "description": "des",
+  "private": true,
+  "scripts": {
+    "sass": "sass assets/sass/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giorgi200/Disert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giorgi200/Disert/issues"
+  },
+  "homepage": "https://github.com/giorgi200/Disert#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

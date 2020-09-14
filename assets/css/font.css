@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'sf-light';
+    src: url('../fonts/SF/SF-Light.otf');
+}
+@font-face {
+    font-family: 'sf-medium';
+    src: url('../fonts/SF/SF-Medium.otf');
+}
+@font-face {
+    font-family: 'sf-regular';
+    src: url('../fonts/SF/SF-Regular.otf');
+}
+@font-face {
+    font-family: 'sf-semibold';
+    src: url('../fonts/SF/SF-Semibold.otf');
+}
+@font-face {
+    font-family: 'helvetica-light';
+    src: url('../fonts/helvetica/HelveticaNeueLight.woff') format("woff"),
+    url('../fonts/helvetica/HelveticaNeueLight.ttf') format("opentype");
+}
+@font-face {
+    font-family: 'helvetica-regular';
+    src: url('../fonts/helvetica/HelveticaNeue.woff')format("woff"),
+    url('../fonts/helvetica/HelveticaNeue.ttf') format("opentype");
+}
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url('../fonts/helvetica/HelveticaNeueBold.ttf');
+}
